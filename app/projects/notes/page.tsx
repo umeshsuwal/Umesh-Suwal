@@ -20,7 +20,7 @@ export default function RectangleProject() {
   }
 
   return (
-    <div className="min-h-screen pb-8 bg-gray-50">
+    <div className="min-h-screen pb-8 bg-background">
       <Nav />
       <main className="container pt-24">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-background rounded-2xl p-8 border">
