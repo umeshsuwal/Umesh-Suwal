@@ -53,7 +53,7 @@ export default function ProjectDetail() {
 
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-      <div className="bg-card rounded-2xl p-8 border">
+      <div className="bg-background rounded-2xl p-8 border">
         <div className="space-y-8">
           <div className="grid grid-cols-2 gap-6">
             <div>
