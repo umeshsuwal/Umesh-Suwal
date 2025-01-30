@@ -23,7 +23,7 @@ export default function RectangleProject() {
     <div className="min-h-screen pb-8 bg-gray-50">
       <Nav />
       <main className="container pt-24">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white rounded-2xl p-8 border">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-background rounded-2xl p-8 border">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="grid grid-cols-2 gap-6">
