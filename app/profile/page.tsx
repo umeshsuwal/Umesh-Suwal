@@ -4,6 +4,17 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
+const handleDownload = () => {
+    const pdfUrl = "/resume.pdf";
+
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "umeshsuwal-resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
 export default function ProfilePage() {
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
@@ -27,7 +38,7 @@ export default function ProfilePage() {
             Constantly learning and refining my skills, I aim to create intuitive digital experiences while staying up-to-date with the latest technologies.
             </p>
             <div className="flex gap-4 justify-center">
-              <Button>Download Resume</Button>
+              <Button onClick={handleDownload}>Download Resume</Button>
               <Button variant="outline">Contact Me</Button>
             </div>
           </div>
